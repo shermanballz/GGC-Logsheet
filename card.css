@@ -1,0 +1,265 @@
+body
+ {
+	 background-color: #e6e6e6;
+	 margin-left: 10px;
+	 margin-right: 10px;
+	 padding: 0px;
+	 font-family: 'Roboto', sans-serif;
+	 font-weight: 400;
+ }
+ 
+  
+  
+ .card
+ {
+	box-shadow: 0px 2px 1px #c2c2c2;
+	background-color: white;
+	color: #7f7f7f;
+	font-size: large;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	max-width: 400px;
+	height: 120px;
+	position: relative;
+	display: none;
+	border-radius: 3px;
+	opacity: 1;
+	transition: height 0.3s ease-out;
+	-webkit-transition: height 0.3s  ease-out;
+	display: none;
+ } 
+  
+  
+.closebox
+  {
+	  position: absolute;
+	  height: 15px;
+	  width: 15px;
+	  padding: 0px 8px 10px;
+	  top: 0px;
+	  left: 0px;
+	  font-size: 17px;
+	  color: #a8a8a8;
+	transition: opacity 0.4s linear;
+	-webkit-transition: opacity 0.4s linear; 
+  }
+
+
+.sessionselect
+  {
+	  background-color: white;
+	  border-width: 0px;
+	  color: #494949;
+	  font-size: large;
+	  position: absolute;
+	  top: 7px;
+	  right: 40px;
+	  font-family: 'Roboto', sans-serif;
+	  font-weight: 400;
+	  font-style: italic;
+  }  
+  
+  
+.tablenumber
+  {
+	  position: absolute;
+	  top:-10px;
+	  left: 15px;
+	  padding: 0px;
+	  color: #f3f3f3;
+	  font-family: 'Roboto', sans-serif;
+	  font-size: 110px;
+	  vertical-align: top;
+	  font-weight: 900;
+	  font-style: normal;
+	  opacity: 0;	  
+  }
+ 
+ 
+.start
+  {
+	  position: absolute;
+	  width: 90%;
+	  height: 30px;
+	  top: 40px;
+	  right: 0px;
+	  text-align: right;
+	  vertical-align: center;
+	  margin-left: 5%;
+	  margin-right: 5%;
+	  z-index: 50;
+  }
+ 
+ 
+.end
+  {
+	  position: absolute;
+	  width: 90%;
+	  height: 30px;
+	  top: 75px;
+	  right: 0px;
+	  text-align: right;
+	  vertical-align: center;
+	  margin-left: 5%;
+	  margin-right: 5%;
+	  z-index: 50;
+  }
+ 
+ 
+.banks
+ {
+	 border-width: 0px;
+	 background-color: rgba(255,255,255,0);
+	 color: #494949;
+	 height: 30px;
+	 width: 35%;
+	 font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	 font-weight: 400;
+	 text-align: center;
+	 
+ }
+ 
+ 
+.times
+  {
+	 border-width: 0px;
+	 background-color: rgba(255,255,255,0);
+	 color: #494949;
+	 height: 30px;
+	 width: 45%;
+	 font-size: 20px;
+	 text-align: right;
+  } 
+ 
+ 
+.notes
+  {
+	  position: absolute;
+	  bottom: 15px;
+	  right: 0px;
+	  width: 90%;
+	  height: 75px;
+	  margin-left: 5%;
+	  margin-right: 5%;
+	  vertical-align: bottom;
+	  opacity: 0;
+	transition: opacity 0.3s ease-out 0.3s;
+	-webkit-transition: opacity 0.3s  ease-out 0.3s;
+  }  
+
+ 
+textarea
+  {
+	  background-color: #f7f7f7;
+	  width:94%;
+	  height: 61px;
+	  border: 0px;
+	  padding: 7px 3%;
+	  font-family: 'Roboto', sans-serif;
+	  font-size: medium;
+	  box-shadow: inset 0px 1px 2px #c2c2c2;
+	  opacity: 0.5;
+  }
+  
+  
+.noteslable
+  {
+	  position: absolute;
+	  text-align: center;
+	  width: 20%;
+	  left: 40%;
+	  right:40%;
+	  top: 20px;
+	  opacity: 1;
+	transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s; 
+  }
+  
+  
+polyline
+  {
+	  fill: none;
+	  stroke-width:1px;
+  } 
+ 
+ 
+.downarrowdiv
+  {
+	  position: absolute;
+	  bottom: -20px;
+	  right: 20px;
+	  width: 30px;
+	  height: 20px;
+	  opacity: 1;
+	  transition: opacity 0s 0.1s;
+	  -webkit-transition: opacity 0s 0.1s;
+	  z-index: 60;	  
+  } 
+
+ 
+.uparrowdiv
+  {
+	  position: absolute;
+	  bottom: -6px;
+	  right: 20px;
+	  width: 30px;
+	  height: 20px;
+	  opacity: 0;
+	  transition: opacity 0s 0.1s;
+	  -webkit-transition: opacity 0s 0.1s;
+	  z-index: 60;	  
+  }
+  
+  
+.newsession
+  {
+	 position: absolute;
+	 bottom: -30px;
+	 left: 15px;
+	 font-weight: 300;
+	 font-size: 20px;
+	 color: #29bdf2;
+	 font-family: 'Roboto', sans-serif;
+	 font-style: italic;
+	transition: opacity 0.4s linear 0.2s;
+	-webkit-transition: opacity 0.4s linear 0.2s; 
+  }
+  
+
+
+
+
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
+.footer, .push {
+height: -4em;
+}
+
+
+
+  
+#versinfo
+  {
+	  font-size: 13px;
+	  color: white;
+	  text-shadow: 0px 1px 2px gray;
+	  text-align: center;
+	  width: 90%;
+  }  
